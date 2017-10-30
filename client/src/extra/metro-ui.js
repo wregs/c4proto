@@ -367,8 +367,8 @@ export default function MetroUi({log,sender,press,svgSrc,fileReader,documentMana
 				font-weight: 400;
 				src: local("Segoe UI"), local("Open Sans"), local("OpenSans"), url(https://themes.googleusercontent.com/static/fonts/opensans/v8/K88pR3goAWT7BTt32Z01mz8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
 			}`;
-			const fontSize = props.style.fontSize?props.style.fontSize:"";
-			const padding = props.style.padding?props.style.padding:"";
+			const fontSize = props.style&&props.style.fontSize?props.style.fontSize:"";
+			const padding = props.style&&props.style.padding?props.style.padding:"";
 			const htmlStyle = `
 				html {
 					font-size: ${fontSize};
